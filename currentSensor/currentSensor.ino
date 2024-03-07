@@ -8,13 +8,13 @@ const int ACPin = 1;
 #define database 6 //資料庫ID
 #define ACrange 25  //電流開關閥值
 
-IPAddress server_addr(34, 81, 183, 159);  // IP of the MySQL *server* here
-char user[] = "lab403";              // MySQL user login username
-char password[] = "66386638";        // MySQL user login password
+IPAddress server_addr();  // IP of the MySQL *server* here
+char user[] = "";              // MySQL user login username
+char password[] = "";        // MySQL user login password
 int status = WL_IDLE_STATUS;
 // WiFi card example
-char ssid[] = "LIYE24";    // your SSID
-char pass[] = "66386638";       // your SSID Password
+char ssid[] = "";    // your SSID
+char pass[] = "";       // your SSID Password
 
 WiFiClient client;            // Use this for WiFi instead of EthernetClient
 MySQL_Connection conn((Client *)&client);
